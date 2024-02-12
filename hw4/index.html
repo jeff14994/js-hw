@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pagination</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+  .pagination-container {
+    text-align: center;
+  }
+  .pagination-container select, .pagination-container button {
+    padding: 5px 10px;
+    margin: 5px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+  }
+  .pagination-container button.active {
+    background-color: #007bff;
+    color: white;
+  }
+  .pagination-info {
+    margin: 10px 0;
+  }
+  .pagination-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+</style>
+</head>
+<body>
+
+<div class="pagination-container">
+  <div class="items-per-page">
+    Items per page:
+    <select id="itemsPerPage" name="itemsPerPage">
+      <option value="5">5</option>
+      <option value="10">10</option>
+      <option value="20">20</option>
+    </select>
+  </div>
+  <div class="pagination-info">
+    1 - 5 of 22
+  </div>
+  <div class="pagination-controls">
+    <button>&lt;&lt;</button>
+    <button>&lt;</button>
+    <button class="active">1</button>
+    <button>2</button>
+    <button>3</button>
+    <button>4</button>
+    <button>5</button>
+    <button>&gt;</button>
+    <button>&gt;&gt;</button>
+  </div>
+</div>
+
+<script>
+  // JavaScript code to handle pagination logic will go here.
+  // It would handle changing the active page, updating the item range display,
+  // and recalculating the range when the items per page selection changes.
+</script>
+
+</body>
+</html>
